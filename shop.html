@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Shop</title>
-  <link rel="stylesheet" href="style.css">
+<title>Shop</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header><h1>🛍 Shop</h1></header>
 
-<div class="products" id="productList"></div>
+<nav>
+<h2>Shop</h2>
+<input type="text" id="search" placeholder="Search products...">
+<a href="cart.html">Cart 🛒</a>
+</nav>
 
-<script src="script.js"></script>
-</body>
-</html>
+<div class="filters">
+<button onclick="filterCategory('all')">All</button>
+<button onclick="filterCategory('hoodie')">Hoodies</button>
+<button onclick="filterCategory('dress')">Dresses</button>
+<button onclick="filterCategory('jacket')">Jackets</button>
+</div>
